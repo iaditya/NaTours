@@ -172,9 +172,12 @@ body {
   position: relative; }
   .composition__photo {
     width: 55%;
+    cursor: pointer;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 2px;
-    position: absolute; }
+    position: absolute;
+    transition: all .2s;
+    z-index: 10; }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -184,6 +187,10 @@ body {
     .composition__photo--p3 {
       top: 10rem;
       left: 20%; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      z-index: 11;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6); }
 
 .row {
   max-width: 114rem;
