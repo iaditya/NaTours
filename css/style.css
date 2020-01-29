@@ -217,13 +217,14 @@ body {
 .card {
   perspective: 1500rem;
   -mz-perspective: 150rem;
-  position: relative; }
+  position: relative;
+  height: 52rem; }
   .card__side {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 50rem;
+    height: 52rem;
     transition: all 0.8s ease;
     backface-visibility: hidden;
     border-radius: 0.3rem;
@@ -266,6 +267,18 @@ body {
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 112, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: center; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .row {
   max-width: 114rem;

@@ -2,13 +2,14 @@
   perspective: 1500rem;
   -mz-perspective: 150rem;
   position: relative;
+  height: 52rem;
 
   &__side {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 50rem;
+    height: 52rem;
     transition: all 0.8s ease;
     backface-visibility: hidden;
     border-radius: 0.3rem;
@@ -89,6 +90,23 @@
     &--2 {
     }
     &--3 {
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-gray-light-2;
+        }
+      }
     }
   }
 }
