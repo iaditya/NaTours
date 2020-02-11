@@ -1,0 +1,18 @@
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: $color-black, $alpha: 0.8);
+  z-index: 9999;
+
+  &__content {
+    @include horz-vert-center;
+    width: 75%;
+    height: 50rem;
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 5px;
+  }
+}
