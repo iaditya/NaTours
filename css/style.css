@@ -376,6 +376,9 @@ body {
   transition: transform 0.3s; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+  @media (max-width: 900px) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
@@ -383,6 +386,9 @@ body {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     color: transparent;
     -webkit-background-clip: text; }
+    @media (max-width: 900px) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
 
 .card {
   perspective: 1500rem;
@@ -850,7 +856,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 900px) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .section-tours {
   background-color: #f7f7f7;
