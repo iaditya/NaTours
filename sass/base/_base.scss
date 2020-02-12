@@ -16,9 +16,9 @@ html {
     font-size: 50%; // 1rem is 8px
   }
 
-//   @include respond(phone) {
-//     font-size: 30%;
-//   }
+    // @include respond(phone) {
+    //   font-size: 30%;
+    // }
 
   @include respond(big-desktop) {
     font-size: 75%; // 1rem is 12px
@@ -27,4 +27,8 @@ html {
 
 body {
   box-sizing: border-box; /* borders & padding will be no longer added with h/w of elements. */
+  padding: 3rem;
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
