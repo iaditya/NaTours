@@ -2,7 +2,7 @@
   background-color: $color-gray-light-2;
   padding: 10rem 0;
   font-size: 1.4rem;
-  color: $color-gray-light-1;
+  color: $color-gray-dark;
 
   &__logo-box {
     text-align: center;
@@ -32,10 +32,11 @@
     text-transform: uppercase;
     display: inline-block;
     transition: all 0.2s;
+    color: $color-gray-dark;
     background-color: $color-gray-light-2;
     &:link,
     &:visited {
-      color: $color-gray-light-1;
+      color: $color-gray-dark;
     }
 
     &:active,
