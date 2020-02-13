@@ -522,6 +522,14 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 900px) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 600px) {
+    .story {
+      transform: skewX(0); } }
   .story__shape {
     position: relative;
     width: 15rem;
@@ -532,6 +540,9 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg); }
+    @media (max-width: 600px) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -556,6 +567,9 @@ body {
     transform: translate(-50%, -50%); }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 600px) {
+      .story__text {
+        transform: skewX(0); } }
 
 .row {
   max-width: 114rem;
